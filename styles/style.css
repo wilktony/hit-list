@@ -16,7 +16,9 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Jost', sans-serif;
+    font-weight: 200; /* or whichever weight you prefer as default */
     color: var(--text-color);
     line-height: 1.6;
     background-color: var(--background-color);
@@ -245,7 +247,7 @@ img {
 }
 
 .about-text .band-intro {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
     color: var(--primary-color);
@@ -566,7 +568,8 @@ img {
 
 .contact-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center the content */
+    align-items: center;
     gap: 5rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -574,6 +577,7 @@ img {
 
 .contact-info {
     flex: 1;
+    text-align: center; /* Centers the text content */
 }
 
 .contact-info h3 {
@@ -588,13 +592,18 @@ img {
 
 .info-item {
     display: flex;
+    justify-content: center; /* Center the content */
     align-items: center;
+    text-align: center; /* Centers the text content */
     margin-bottom: 1rem;
 }
 
 .info-item i {
     margin-right: 1rem;
     font-size: 1.2rem;
+    justify-content: center; /* Center the content */
+    align-items: center;
+    text-align: center; /* Centers the text content */
     color: var(--primary-color);
 }
 
@@ -673,6 +682,9 @@ input:focus, textarea:focus {
 .footer-content {
     display: flex;
     justify-content: space-between;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    gap: 2rem; /* Add some space between items */
     flex-wrap: wrap;
     gap: 3rem;
     margin-bottom: 3rem;
@@ -683,11 +695,16 @@ input:focus, textarea:focus {
     font-weight: 700;
     margin-bottom: 0.5rem;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .footer-logo p {
     font-size: 1rem;
     opacity: 0.8;
+}
+
+.footer-links {
+    text-align: center; /* Add this */
 }
 
 .footer-links h4, .footer-newsletter h4 {
@@ -703,12 +720,17 @@ input:focus, textarea:focus {
     width: 50%;
     height: 2px;
     bottom: -5px;
-    left: 0;
+    left: 25%; /* to center the underline */
     background-color: var(--primary-color);
 }
 
 .footer-links ul li {
     margin-bottom: 0.8rem;
+}
+
+.footer-links ul {
+    list-style: none; /* Remove bullets if they exist */
+    padding: 0; /* Remove default padding */
 }
 
 .footer-links a {
